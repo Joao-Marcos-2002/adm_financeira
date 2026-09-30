@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8">
+<title>Relatório de Risco e Retorno</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:1000px;margin:auto;padding:20px;color:#222}
+h1{color:#1a4d80} h2{border-bottom:2px solid #1a4d80;padding-bottom:4px;color:#1a4d80}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border:1px solid #ccc;padding:6px;text-align:center}
+th{background:#1a4d80;color:#fff} tr:nth-child(even){background:#f2f6fa}
+</style></head><body>
+<h1>Relatório de Risco e Retorno</h1>
+<p><b>Gerado em:</b> ${agora} | <b>Dados:</b> ${modo} |
+<b>Período:</b> ${inicio} a ${fim} |
+<b>Rf:</b> ${rf}% a.a.</p>
+<h2>1) Estatísticas por ativo</h2>${tabela_estatisticas}
+<h2>2) Correlação</h2>${tabela_correlacao}
+<h2>3) Sua carteira</h2>
+<p>Pesos: ${pesos_usuario}<br>
+Retorno: <b>${ret_usuario}%</b> | Risco: <b>${risco_usuario}%</b> |
+Sharpe: <b>${sharpe_usuario}</b></p>
+<h2>4) Carteiras notáveis</h2>
+<p><b>Mínimo risco:</b> ${pesos_min} → retorno ${ret_min}%,
+risco ${risco_min}%<br>
+<b>Máximo Sharpe:</b> ${pesos_max} → retorno ${ret_max}%,
+risco ${risco_max}%</p>
+<h2>5) Interpretação</h2><ul>${interpretacao}</ul>
+<h2>6) Gráficos</h2>${graficos}
+</body></html>

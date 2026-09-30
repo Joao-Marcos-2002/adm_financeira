@@ -1,0 +1,60 @@
+==============================================================================
+RELATÓRIO DE RISCO E RETORNO
+==============================================================================
+Gerado em: 30/09/2026 15:36
+Origem dos dados: YAHOO
+Período: 2023-10-02 a 2026-09-29 (747 observações)
+Taxa livre de risco (Rf): 10.00% a.a.
+Ativos analisados: PETR4.SA, VALE3.SA, ITUB4.SA, WEGE3.SA | Mercado: ^BVSP
+
+==============================================================================
+1) ESTATÍSTICAS POR ATIVO
+==============================================================================
+         Retorno Esperado (a.a.) Risco - Desvio Padrão (a.a.) Coef. de Variação  Beta Retorno CAPM (a.a.) Índice de Sharpe Alfa de Jensen         Classificação
+Ticker                                                                                                                                                         
+PETR4.SA                  29.51%                       25.73%              0.87  0.59              14.12%             0.76         15.40%  Defensivo (beta < 1)
+VALE3.SA                  13.38%                       24.34%              1.82  0.83              15.83%             0.14         -2.44%  Defensivo (beta < 1)
+ITUB4.SA                  29.39%                       21.12%              0.72  1.07              17.51%             0.92         11.88%  Agressivo (beta > 1)
+WEGE3.SA                  18.02%                       28.84%              1.60  0.70              14.92%             0.28          3.10%  Defensivo (beta < 1)
+^BVSP                     17.01%                       15.33%              0.90  1.00              17.01%             0.46         -0.00%     Neutro (beta ≈ 1)
+
+==============================================================================
+2) MATRIZ DE CORRELAÇÃO
+==============================================================================
+Ticker    PETR4.SA  VALE3.SA  ITUB4.SA  WEGE3.SA  ^BVSP
+Ticker                                                 
+PETR4.SA      1.00      0.11      0.09      0.04   0.35
+VALE3.SA      0.11      1.00      0.25      0.21   0.52
+ITUB4.SA      0.09      0.25      1.00      0.24   0.78
+WEGE3.SA      0.04      0.21      0.24      1.00   0.37
+^BVSP         0.35      0.52      0.78      0.37   1.00
+
+==============================================================================
+3) CARTEIRA DEFINIDA PELO USUÁRIO
+==============================================================================
+Pesos: PETR4.SA: 25.0%, VALE3.SA: 25.0%, ITUB4.SA: 25.0%, WEGE3.SA: 25.0%
+Retorno esperado: 22.58% a.a.
+Risco (desvio-padrão): 15.12% a.a.
+Índice de Sharpe: 0.83
+
+==============================================================================
+4) CARTEIRAS NOTÁVEIS (fronteira eficiente)
+==============================================================================
+Mínimo risco  -> Retorno 23.90% | Risco 14.80% | Sharpe 0.94
+   Pesos: PETR4.SA: 27.7%, VALE3.SA: 24.1%, ITUB4.SA: 33.5%, WEGE3.SA: 14.7%
+Máximo Sharpe -> Retorno 28.98% | Risco 16.64% | Sharpe 1.14
+   Pesos: PETR4.SA: 38.7%, VALE3.SA: 1.2%, ITUB4.SA: 57.8%, WEGE3.SA: 2.2%
+
+==============================================================================
+5) INTERPRETAÇÃO DOS RESULTADOS
+==============================================================================
+- Maior retorno esperado: PETR4.SA (29.51% a.a.).
+- Maior risco: WEGE3.SA; menor risco: ITUB4.SA. Em geral, maior risco deve ser compensado por maior retorno esperado.
+- Melhor relação retorno/risco (Sharpe): ITUB4.SA (0.92).
+- PETR4.SA: beta 0.59 (Defensivo (beta < 1)); retorno esperado ACIMA do exigido pelo CAPM.
+- VALE3.SA: beta 0.83 (Defensivo (beta < 1)); retorno esperado ABAIXO do exigido pelo CAPM.
+- ITUB4.SA: beta 1.07 (Agressivo (beta > 1)); retorno esperado ACIMA do exigido pelo CAPM.
+- WEGE3.SA: beta 0.70 (Defensivo (beta < 1)); retorno esperado ACIMA do exigido pelo CAPM.
+- Carteira de mínimo risco: risco 14.80% e retorno 23.90%. Mostra o efeito da DIVERSIFICAÇÃO: o risco da carteira tende a ser menor que a média ponderada dos riscos individuais.
+- Carteira de máximo Sharpe: retorno 28.98% e risco 16.64% (melhor retorno por unidade de risco).
+- Observação: retornos passados não garantem retornos futuros; o risco diversificável pode ser eliminado, o risco sistemático (beta) não.
